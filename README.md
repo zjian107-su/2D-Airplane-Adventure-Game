@@ -16,13 +16,15 @@
   
   `brew upgrade pipenv`
   
-3. Go to desired directory and create/enter your Python Pipenv there by typing: 
+3. Go to desired directory and setup your Python Pipenv there by typing: 
   
   `pipenv shell`
   
-4. Install all modules for this game by typing: 
+  What Happen behind the scene: "pipenv shell" will search for Pipfile and donwload all modules automatically in yoru new environement.
   
-  `pipenv install --dev`
+  Guide of how to use [PipEnv](https://realpython.com/pipenv-guide/#yes-i-need-to-distribute-my-code-as-a-package).
+  
+ 
   
 5. Once everything is installed, open your terminal in the directory that includes the game file: 
   
