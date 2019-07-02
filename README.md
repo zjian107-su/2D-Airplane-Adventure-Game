@@ -16,15 +16,15 @@
   
   `brew upgrade pipenv`
   
-  Go to desired directory and create/enter your Python Pipenv there by typing: 
+3. Go to desired directory and create/enter your Python Pipenv there by typing: 
   
   `pipenv shell`
   
-  Install all modules for this game by typing: 
+4. Install all modules for this game by typing: 
   
   `pipenv install --dev`
   
-  Once everything is installed, open your terminal in the directory that includes the game file: 
+5. Once everything is installed, open your terminal in the directory that includes the game file: 
   
   `python 2D_AirplanGame.py` 
 
