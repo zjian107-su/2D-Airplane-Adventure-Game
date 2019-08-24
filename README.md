@@ -16,12 +16,14 @@
   
   `brew upgrade pipenv`
   
-3. Go to desired directory and setup your Python Pipenv there by typing, assuming you have Python 3.7.1:
+3. The following code will do:
+    1, create a new Python env with Python 3.7.x;
+    2, automatically install required Python module(PyGame);
+    3, enter the env:
 
   `pipenv --three`
+  `pipenv install`
   `pipenv shell`
-  
-  What Happen behind the scene: "pipenv shell" will search for Pipfile and download all modules automatically in your new environment.
   
   Guide of how to use [PipEnv](https://realpython.com/pipenv-guide/#yes-i-need-to-distribute-my-code-as-a-package).
   
