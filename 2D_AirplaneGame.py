@@ -137,8 +137,10 @@ class EnemyBullet:
         """bullets chase heroes """
         self.x += self.angx * self.speed / math.sqrt(self.angx ** 2 + self.angy ** 2)
         self.y += self.angy * self.speed / math.sqrt(self.angx ** 2 + self.angy ** 2)
+        # bullet out of bound --> 1
         if self.y <= -20 or self.y >= 700 or self.x <= -20 or self.x >= 512:
-            return 1
+            return 1 
+        # bullet hits --> 2
         elif self.x > hero.x and self.x < hero.x + 106 and self.y + 30 > hero.y + 15 and self.y + 30 < hero.y + 42:
             return 2
 
@@ -175,6 +177,13 @@ def display(obj):
 
 
 def main():
+    # init
+    pygame.init()
+
+    # load sounds
+    crash_sound = pygame.mixer.Sound("crash.wav")
+    pygame.mixer.music.load("demon.wav")
+
     # create the game windows
     screen = pygame.display.set_mode((512, 700), 0, 0)
     pygame.display.set_caption('2D_Airplane')
@@ -198,6 +207,9 @@ def main():
     # die set as false
     die = False
 
+            
+    pygame.mixer.music.play(-1)
+
     while True:
         # draw images (pointer is outside of the window. Half of the image is outside )
         screen.blit(background, (0, m))
@@ -210,6 +222,7 @@ def main():
 
         # draw exploding effect based on the plane HP
         if die:
+            pygame.mixer.music.stop()
             screen.blit(pygame.image.load('./images/gameover.png'), (131, 175))
             screen.blit(pygame.image.load('./images/restart.png'), (100, 450))
             screen.blit(pygame.image.load('./images/quit.png'), (345, 443))
@@ -227,6 +240,7 @@ def main():
                             enemy_list.clear()
                             enemybullet_list.clear()
                             hero.bullet_list.clear()
+                            pygame.mixer.music.play(-1)
                         elif 345 <= pos[0] <= 412 and 443 <= pos[1] <= 481:
                             exit()
                             pygame.quit()
@@ -258,6 +272,7 @@ def main():
                         hero.x < e.x + 104 < hero.x + 106 and hero.y + 15 < e.y + 30 < hero.y + 42) or (
                         hero.x < e.x < hero.x + 106 and hero.y + 15 < e.y + 62 < hero.y + 42) or (
                         hero.x < e.x + 104 < hero.x + 106 and hero.y + 15 < e.y + 62 < hero.y + 42):
+                    pygame.mixer.Sound.play(crash_sound)    
                     for i in range(0, 4):
                         for j in range(10):
                             screen.blit(pygame.image.load('./images/bomb' + str(i) + '.png'), (e.x, e.y))
@@ -270,6 +285,8 @@ def main():
                     if eb.move(hero) == 1:
                         enemybullet_list.remove(eb)
                     elif eb.move(hero) == 2:
+                        pygame.mixer.Sound.play(crash_sound)
+                        # 10 frames, 4 random bomb image options 
                         for i in range(0, 4):
                             for j in range(10):
                                 screen.blit(pygame.image.load('./images/bomb' + str(i) + '.png'), (hero.x, hero.y))
