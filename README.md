@@ -4,11 +4,11 @@
 
 Daniel Zezheng Jiang created a 2D airplane shooting game with Python and PyGame module.
 
-It includes 300 lines of codes. It requires the installation of Python and PyGame module in the local machine.
+It includes 300 lines of code. It requires the installation of Python and PyGame module in the local machine.
 
 ## Basic Navigation In The Game 
 
-Press "AWDS" or direction key to move the hero airplane. Press space key to shoot bullets. The player may click "Restart" button to restart the game, and the player may clock "Quit" button or "X" in the corner of the window to quit.
+Press "AWDS" or direction key to move the hero airplane. Press space key to shoot bullets. The player may click the "Restart" button to restart the game, and the player may clock the "Quit" button or "X" in the corner of the window to quit.
 
 
 ## Environment Instruction
@@ -29,7 +29,7 @@ Learn how to [pull a GitHub Repo](https://git-scm.com/book/en/v2/Git-Basics-Gett
   
     https://pipenv.kennethreitz.org/en/latest/install/
   
-5. Go to desired directory and setup your Python Pipenv there by typing, assuming you have Python version 3.7.X:
+5. Go to desired directory and set up your Python Pipenv there by typing, assuming you have Python version 3.7.X:
 
     ```
     #pipenv --three
