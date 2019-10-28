@@ -10,9 +10,9 @@ It includes 300 lines of code. It requires the installation of Python and PyGame
 
 Press "AWDS" or direction key to move the hero airplane. Press space key to shoot bullets. The player may click the "Restart" button to restart the game, and the player may clock the "Quit" button or "X" in the corner of the window to quit.
 
-![Hero Airplane is shoting](/screenshots/shooting.png?raw=true "Hero Airplane is shoting")
+![Hero Airplane is shoting](screenshots/shooting.png?raw=true "Hero Airplane is shoting")
 
-![End of The Game](/screenshots/end.png?raw=true "End of The Game")
+![End of The Game](screenshots/end.png?raw=true "End of The Game")
 
 
 ## Environment Instruction
@@ -47,6 +47,7 @@ Learn how to [pull a GitHub Repo](https://git-scm.com/book/en/v2/Git-Basics-Gett
     ```
     #python 2D_AirplaneGame.py
     ```
+
 ## Content
 
 MIT License
