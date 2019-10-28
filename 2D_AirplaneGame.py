@@ -181,8 +181,8 @@ def main():
     pygame.init()
 
     # load sounds
-    crash_sound = pygame.mixer.Sound("crash.wav")
-    pygame.mixer.music.load("demon.wav")
+    crash_sound = pygame.mixer.Sound("sounds/crash.wav")
+    pygame.mixer.music.load("sounds/demon.wav")
 
     # create the game windows
     screen = pygame.display.set_mode((512, 700), 0, 0)
