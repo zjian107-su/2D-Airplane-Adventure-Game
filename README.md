@@ -1,4 +1,6 @@
-<div style="background-color:#f5f0ff;"># 2D Airplane Adventure Game
+<div style="background-color:#f5f0ff;">
+
+# 2D Airplane Adventure Game
 
 Daniel Zezheng Jiang has created a 2D airplane adventure game with Python(3.7.6) and PyGame(2.0.0.dev6) module.
 
