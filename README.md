@@ -4,7 +4,7 @@
 
 Daniel Zezheng Jiang has created a 2D airplane adventure game with Python(3.7.6) and PyGame(2.0.0.dev6) module.
 
-It includes 300 lines of code. It requires the installation of Python and PyGame module in the local machine. 
+It includes 300 lines of code. It requires the installation of Python and PyGame module in the local machine. (10/2018)
 
 ## **Introduction**
 
