@@ -1,63 +1,49 @@
 # 2D Airplane Shooting Game
 
-## Content
+Daniel Zezheng Jiang has created a 2D airplane advanture game with Python(3.7.6) and PyGame(2.0.0.dev6) module.
 
-Daniel Zezheng Jiang created a 2D airplane shooting game with Python and PyGame module.
+It includes 300 lines of code. It requires the installation of Python and PyGame module in the local machine. 
 
-It includes 300 lines of code. It requires the installation of Python and PyGame module in the local machine.
+## **Introduction**
 
-## Basic Navigation In The Game 
+### Getting Started 
+1. Create a directory named "**PyGame-Daniel**" on desktop 
 
-Press "AWDS" or direction key to move the hero airplane. Press space key to shoot bullets. The player may click the "Restart" button to restart the game, and the player may clock the "Quit" button or "X" in the corner of the window to quit.
+2. Open "Terminal"(Linux/MacOS) or Ubuntu(WSL on windows) or [Git](https://git-scm.com/downloads) within the new directory. 
 
+3. Copy the code `$ git clone https://github.com/zjian107-su/2D-Airplane-Shooting-Game.git` into the terminal and press "ENTER"  
+   
+4. Ensure Python is installed by running `$ python --vesion` and press **ENTER**. If your Python version is below 3.7.7, it is recommand to [install version 3.7.7](https://www.python.org/) because it's faster version of Python.
+   
+5. Create an isolate Python environment with [**pipenv**](https://pipenv.pypa.io/en/latest/). But before that, you need to install it. Within the cloned folder named **2D-Airplane-Shooting-Game**
+   ```
+   $ brew install pipenv
+   $ cd 2D-Airplane-Shooting-Game
+   $ pipenv --three
+   $ ipenv install
+   $ pipenv shell
+   ```
+
+6. Install PyGame module for Python by running `$ pipenv install pygame==2.0.0.dev6`
+   
+7. Double check if the pygame is installed corretly by running `$ pipenv run pip freeze`. If you see pygame, then congrats!
+   
+8. Lastly run `Python3 2D_AirplaneGame.py` and enjoy!
+
+### Basic Navigation In The Game 
+
+Press "A", "W", "D", "S" or any direction key to move the hero airplane. Press space key to shoot bullets. 
+
+A Clision with an enemy airplane or a bullet would end the game. The player may click the "Restart" button to restart the game, and the player may clock the "Quit" button or "X" in the corner of the window to quit.
+
+
+### Screenshots 
 <!--
-
 ![Hero Airplane is shoting](screenshots/shooting.png?raw=true "Hero Airplane is shoting")
 
 ![End of The Game](screenshots/end.png?raw=true "End of The Game")
-
 -->
 
 ![image](https://user-images.githubusercontent.com/35544956/67647936-403c2100-f8f1-11e9-9fbd-220de461124d.png?raw=true "Hero Airplane is shooting")
 
 ![image](https://user-images.githubusercontent.com/35544956/67647886-0d922880-f8f1-11e9-82fc-998f4c163a16.png?raw=true "End of The Game")
-
-## Content 
-Daniel Zezheng Jiang created a 2D airplane shooting game with Python and pyGame module.
-300 lines Python code, PyGame, Pipenv, Survive
-
-
-## Environment Instruction
-1. Install Python3
-
-2. Assume you are a MacOS/Linux user, install Pipenv in TERMINAL(Command Line Tool) :
-  
-  `brew install pipenv`
-  
-   (If you have it already, you may upgrade): 
-  
-  `brew upgrade pipenv`
-  
-3. The following code will do:
-    1, create a new Python env with Python 3.7.x;
-    2, automatically install required Python module(PyGame);
-    3, enter the env:
-
-  `pipenv --three`
-  `pipenv install`
-  `pipenv shell`
-  
-  Guide of how to use [PipEnv](https://realpython.com/pipenv-guide/#yes-i-need-to-distribute-my-code-as-a-package).
-
-  
-    Behind the scene: "pipenv shell" will search for existing Pipfile and download all modules automatically in your new environment.
-
-4. Once everything is installed, open your terminal in the directory that includes the game file:
-  
-    ```
-    #python 2D_AirplaneGame.py
-    ```
-
-## Content
-
-MIT License
