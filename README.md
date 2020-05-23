@@ -1,4 +1,4 @@
-# 2D Airplane Adventure Game
+<div style="background-color:#f5f0ff;"># 2D Airplane Adventure Game
 
 Daniel Zezheng Jiang has created a 2D airplane adventure game with Python(3.7.6) and PyGame(2.0.0.dev6) module.
 
@@ -47,3 +47,5 @@ A Collision with an enemy airplane or a bullet would end the game. The player ma
 ![image](https://user-images.githubusercontent.com/35544956/67647936-403c2100-f8f1-11e9-9fbd-220de461124d.png?raw=true "Hero Airplane is Firing")
 
 ![image](https://user-images.githubusercontent.com/35544956/67647886-0d922880-f8f1-11e9-82fc-998f4c163a16.png?raw=true "End of The Game")
+
+</div>
