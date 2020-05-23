@@ -13,7 +13,7 @@ It includes 300 lines of code. It requires the installation of Python and PyGame
 
 3. Copy the code `$ git clone https://github.com/zjian107-su/2D-Airplane-Shooting-Game.git` into the terminal and press "ENTER"  
    
-4. Ensure Python is installed by running `$ python --vesion` and press **ENTER**. If your Python version is below 3.7.7, it is recommand to [install version 3.7.7](https://www.python.org/) because it's faster version of Python.
+4. Ensure Python is installed by running `$ python --vesion` and press "ENTER". If your Python version is below 3.7.7, it is recommand to [install version 3.7.7](https://www.python.org/) because it's faster version of Python.
    
 5. Create an isolate Python environment with [**pipenv**](https://pipenv.pypa.io/en/latest/). But before that, you need to install it. Within the cloned folder named **2D-Airplane-Shooting-Game**
    ```
