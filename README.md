@@ -1,6 +1,7 @@
 # 2D_Airplane_Shooting_Game
 
 ## Content 
+Daniel Zezheng Jiang created a 2D airplane shooting game with Python and pyGame module.
 300 lines Python code, PyGame, Pipenv, Survive
 
 ## Environment Instruction
