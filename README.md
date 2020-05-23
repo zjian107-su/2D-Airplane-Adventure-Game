@@ -1,6 +1,6 @@
 # 2D Airplane Shooting Game
 
-Daniel Zezheng Jiang has created a 2D airplane advanture game with Python(3.7.6) and PyGame(2.0.0.dev6) module.
+Daniel Zezheng Jiang has created a 2D airplane adventure game with Python(3.7.6) and PyGame(2.0.0.dev6) module.
 
 It includes 300 lines of code. It requires the installation of Python and PyGame module in the local machine. 
 
@@ -13,20 +13,20 @@ It includes 300 lines of code. It requires the installation of Python and PyGame
 
 3. Copy the code `$ git clone https://github.com/zjian107-su/2D-Airplane-Shooting-Game.git` into the terminal and press "ENTER"  
    
-4. Ensure Python is installed by running `$ python --vesion` and press "ENTER". If your Python version is below 3.7.7, it is recommand to [install version 3.7.7](https://www.python.org/) because it's faster version of Python.
+4. Ensure Python is installed by running `$ python --version` and press "ENTER". If your Python version is below 3.7.7, it is recommanded to [install version 3.7.7](https://www.python.org/) because it's a faster version of Python.
    
-5. Create an isolate Python environment with [**pipenv**](https://pipenv.pypa.io/en/latest/). But before that, you need to install it. Within the cloned folder named **2D-Airplane-Shooting-Game**
+5. Create an isolated Python environment with [**Pipenv**](https://pipenv.pypa.io/en/latest/) module. But before that, you need to install it. Within the cloned folder named **2D-Airplane-Shooting-Game**
    ```
    $ brew install pipenv
    $ cd 2D-Airplane-Shooting-Game
    $ pipenv --three
-   $ ipenv install
+   $ penv install
    $ pipenv shell
    ```
 
 6. Install PyGame module for Python by running `$ pipenv install pygame==2.0.0.dev6`
    
-7. Double check if the pygame is installed corretly by running `$ pipenv run pip freeze`. If you see pygame, then congrats!
+7. Double check if the PyGame is installed corretly by running `$ pipenv run pip freeze`. If you see PyGame listed, then congrats!
    
 8. Lastly run `Python3 2D_AirplaneGame.py` and enjoy!
 
@@ -34,7 +34,7 @@ It includes 300 lines of code. It requires the installation of Python and PyGame
 
 Press "A", "W", "D", "S" or any direction key to move the hero airplane. Press space key to shoot bullets. 
 
-A Clision with an enemy airplane or a bullet would end the game. The player may click the "Restart" button to restart the game, and the player may clock the "Quit" button or "X" in the corner of the window to quit.
+A Collision with an enemy airplane or a bullet would end the game. The player may click the "Restart" button to restart the game, and the player may clock the "Quit" button or "X" in the corner of the window to quit.
 
 
 ### Screenshots 
